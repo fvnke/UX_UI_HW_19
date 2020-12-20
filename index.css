@@ -1,0 +1,288 @@
+
+.heroImg{
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto 0;
+  justify-content: center;
+  
+}
+
+
+.flexAboutme {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  background-color: white;
+  padding: 5%;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  
+  }
+  
+
+  .flex-container > div {
+    width: 33%;
+    padding:10px;
+    text-align: center;  
+    line-height: 50%;
+  
+  
+  }
+  
+
+
+.flexContainer {
+
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: stretch;
+background-color:white;
+padding: 5%;
+margin: 0 auto;
+justify-content: space-evenly;
+width:700px;
+
+}
+
+.flex-container > div {
+  width: 33%;
+  padding:10px;
+  text-align: center;  
+  line-height: 50%;
+
+}
+
+body {
+  margin: 10px;
+  font-family:'Raleway', sans-serif;
+  border: red;
+  }
+
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 15px;
+  border-color: red;
+  border-width: 2px;
+  width:100%;
+ 
+    }
+
+
+header ul {
+  float: right;
+  color: white;
+  border-color: red;
+  border-width: 2px;
+}
+
+header li {
+  display: inline-block;
+  padding: 0px 5px;
+  border-color: red;
+  border-width: 2px;
+  font-family:'Raleway', sans-serif;
+  color: black;
+}
+
+
+header p {
+
+  display: inline-block;
+  border-color: red;
+  border-width: 2px;
+  font-family:'Raleway', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.nameLogo {
+
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+
+  display: flex;
+  align-items: flex-end;
+}
+
+
+.heroImg {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 50px 15px;
+  border-color: red;
+  border-width: 2px;
+}
+
+.content {
+
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #FFFFFF;
+  text-align: center;
+  border-color: red;
+  border-width: 2px;
+}
+
+.contentTwo {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+  border-color: red;
+  border-width: 2px;
+}
+
+button {
+  padding: 15px;
+  background-color: #708090;
+  color: white;
+  font-size: 15px;
+  border-radius: 4px;
+
+  font-family:'Raleway', sans-serif;
+}
+
+.workGrid {
+
+background-color: white;
+
+display: grid;
+
+
+grid-template-rows: 33% 33% 33%;
+grid-template-columns: 40% 60%;
+
+grid-template-areas:
+ "firstLeft firstRight"
+ "secondLeft secondRight"
+ "thirdLeft thirdRight"
+ ;
+
+align-items: center;
+margin: 10px;
+padding: 50px;
+width: 50%;
+
+
+}
+
+
+.firstLeft {
+  grid-area: firstLeft;
+  justify-content: center;
+  align-content: center;
+ }
+
+ .firstRight {
+  grid-area: firstRight;
+  justify-content: left;
+  align-content: left;
+ }
+
+ .secondLeft {
+  grid-area: secondLeft;
+  justify-content: center;
+  align-content: center;
+ }
+
+ .secondRight {
+  grid-area: secondRight;
+  justify-content: center;
+  align-content: center;
+ }
+
+ .thirdLeft {
+  grid-area: thirdLeft;
+  justify-content: center;
+  align-content: center;
+ }
+
+ .thirdRight {
+  grid-area: thirdRight;
+  justify-content: center;
+  align-content: center;
+ }
+
+
+
+
+
+
+footer {
+  background-color: #373738;
+  padding: 5px;
+  color: white;
+
+  font-family:'Raleway', sans-serif;
+}
+footer ul {
+  list-style: none;
+  padding-left: 5px;
+  
+  font-family:'Raleway', sans-serif;
+}
+footer li {
+  display: inline-block;
+  padding: 0px 7px;
+  
+  font-family:'Raleway', sans-serif;
+}
+
+
+@media only screen and (max-width:600){
+
+  .flexContainer {
+
+    display: flex;
+    flex-direction: column;
+  }
+    
+    .flex-container > div {
+      width: 100%;
+    
+} }
+
+
+body {
+
+  background-color:white;
+
+}
+@media only screen and (max-width:600px){
+body { 
+
+  background-color:white;
+}
+
+
+.workGrid {
+
+ 
+  grid-template-rows: 300px 300px 300px 300px 300px 300px;
+  grid-template-columns: 1fr;
+  grid-template-areas:  
+   
+   "firstLeft"
+   "firstRight"
+   "secondLeft" 
+   "secondRight"
+   "thirdLeft"
+   "thirdRight"
+   ; 
+}
+}
