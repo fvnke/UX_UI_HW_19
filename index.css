@@ -115,6 +115,8 @@ header p {
 
   display: flex;
   align-items: flex-end;
+  padding-right: 10%;
+  font-weight: 900;
 }
 
 
@@ -129,13 +131,21 @@ header p {
 
 .content {
 
-  max-width: 300px;
+  max-width: 700px;
   margin: 0 auto;
   padding: 50px;
   background-color: #FFFFFF;
   text-align: center;
   border-color: red;
   border-width: 2px;
+  font-size: 25px;
+  /*
+  opacity: 0;
+  transition: opacity 1s ease-in;
+  */
+
+
+
 }
 
 .contentTwo {
@@ -149,7 +159,7 @@ header p {
 
 button {
   padding: 15px;
-  background-color: #708090;
+  background-color: #373737;
   color: white;
   font-size: 15px;
   border-radius: 4px;
