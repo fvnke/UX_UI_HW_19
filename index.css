@@ -139,10 +139,10 @@ header p {
   border-color: red;
   border-width: 2px;
   font-size: 25px;
-  /*
-  opacity: 0;
-  transition: opacity 1s ease-in;
-  */
+  display: none;
+  /*opacity: 0;
+  transition: opacity 1s ease-in;*/
+
 
 
 
